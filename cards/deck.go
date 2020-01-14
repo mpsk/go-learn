@@ -40,7 +40,7 @@ func (d deck) deal(size int) (deck, deck) {
 	return dealCards(d, size)
 }
 
-func (d deck) shuffle() deck  {
+func (d deck) shuffle() deck {
 	return d
 }
 
@@ -64,7 +64,7 @@ func newDeckFromFile(filename string) deck {
 		os.Exit(1)
 	}
 	s := strings.Split(string(bs), ", ")
-	return deck(s);
+	return deck(s)
 }
 
 // --- helpers
